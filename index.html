@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>CALCULATOR</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen">
+      <div class="calculator bg-gray-200 p-4 rounded-lg shadow-md">
+        <input
+          type="text"
+          id="display"
+          placeholder=""
+          class="w-full p-4 text-3xl text-right bg-slate-300"
+          disabled
+        />
+        <div class="grid grid-cols-4 gap-4 mt-4">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="clearDisplay()"
+          >
+            C
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="deleteLastChar()"
+          >
+            DEL
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendOperator('/')"
+          >
+            /
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendOperator('*')"
+          >
+            *
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('7')"
+          >
+            7
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('8')"
+          >
+            8
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('9')"
+          >
+            9
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendOperator('-')"
+          >
+            -
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('4')"
+          >
+            4
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('5')"
+          >
+            5
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('6')"
+          >
+            6
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendOperator('+')"
+          >
+            +
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('1')"
+          >
+            1
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('2')"
+          >
+            2
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('3')"
+          >
+            3
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="calculate()"
+          >
+            =
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendNumber('0')"
+          >
+            0
+          </button>
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            onclick="appendOperator('.')"
+          >
+            .
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
